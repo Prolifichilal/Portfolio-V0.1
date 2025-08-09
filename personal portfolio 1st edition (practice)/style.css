@@ -1,0 +1,549 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 125, 92);
+}
+
+#navigation-bar{
+    position: fixed;
+    background-color: rgb(13, 177, 125);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+}
+
+.nav-logo-div{
+    padding: 20px;
+    font-size: 25px;
+}
+
+.nav-logo-div a{
+    text-decoration: none;
+}
+
+.nav-logo-div span{
+    color: white;
+    font-weight: 600;
+}
+
+.nav-navlist-div{
+    padding: 20px;
+    font-size: 18px;   
+}
+
+.nav-navlist-div ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+} 
+
+.nav-navlist-div ul a{
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: font-size 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-navlist-div ul a:hover{
+    font-size: 20px;
+    opacity: 80%;
+}
+
+#home-section{
+    background-color: rgb(22, 125, 92);
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content-container{
+    align-items: center;
+}
+
+
+
+.home-title-content h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.home-title-content p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.home-buttons{
+    padding-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.home-button1{
+    padding: 5px 15px;
+    border-radius: 7px; 
+    background-color: rgb(13, 177, 125);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: padding 0.3s ease, background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    border-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.home-button2{
+    padding: 5px 15px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 128, 90);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;transition: padding 0.3s ease, background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    border-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.home-button1:hover{
+    background-color: white;
+    color: rgb(8, 128, 90);
+    opacity: 90%;
+    padding: 7px 17px;
+}
+
+.home-button2:hover{
+    background-color: rgb(13, 177, 125);
+    color: white;
+    opacity: 90%;
+    padding: 7px 17px;
+}
+
+
+#skills-section{
+    height: 400px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(14, 86, 63);
+}
+
+.skill-main-container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-content-container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-content-container h2{
+    padding: 10px;
+    font-weight: 800;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.skillset-png{
+    background-color: white;
+    margin: 0px;
+    padding: 25px 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skillset-png img{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    transition: width 0.3s ease, height 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.skillset-png img:hover{
+    opacity: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    height: 60px;
+    width: 60px;
+}
+
+
+#portfolio-section{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 86, 63);
+    padding: 10px;
+}
+
+.portfolio-main{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 86, 63);
+}
+
+.portfolio-content{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 86, 63);
+    gap: 30px;
+}
+
+.pf-images-div{
+    width: 100%;
+    gap: 1px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    align-items: center;
+    justify-content: center;
+}
+
+.pf-images-div:nth-child(1) {
+  background-color: rgb(57, 212, 181);
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pf-images-div:nth-child(1):hover{
+    opacity: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.pf-images-div:nth-child(2) {
+  background-color: rgb(57, 212, 181);
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pf-images-div:nth-child(2):hover{
+    opacity: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.pf-images-div:nth-child(3) {
+  background-color: rgb(57, 212, 181);
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pf-images-div:nth-child(3):hover{
+    opacity: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.pf-images-div:nth-child(4) {
+  background-color: rgb(57, 212, 181);
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pf-images-div:nth-child(4):hover{
+    opacity: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.pf-images-div:nth-child(5) {
+  background-color: rgb(57, 212, 181);
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pf-images-div:nth-child(5):hover{
+    opacity: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.pf-images-div img{
+    margin: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.pf-p{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+
+
+#about-section{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 125, 92);
+}
+
+.about-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.about-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.about-description h2{
+    text-align: center;
+    margin: 5;
+    font-weight: 900;
+}
+
+.about-description p{
+    text-align: center;
+    margin: 0;
+}
+
+
+.about-education{
+    padding: 0px 0px 0px 0px;
+    color: white;
+    text-align: center;
+    gap: 1px;
+}
+
+.about-education h2{
+    padding: 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+}
+
+.education-containers{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.edu-cont{
+    line-height: 18px;
+    justify-content: center;
+    gap: 30px;
+    height: 80px;
+    width: 220px;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.edu-cont:hover{
+    background-color: rgb(69, 174, 139);
+    padding: 5px 9px;
+    color: white;
+}
+
+.edu-cont h5{
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 5px;
+    font-size: 11px;
+    font-weight: 300;
+    transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.edu-cont h5:hover{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#contact-section{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container{
+    margin: 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 18px;
+    width: 300px;
+    height: 400px;
+    line-height: 19px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container:hover{
+    width: 310px;
+    height: 410px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.contact-container form label{
+    color: rgb(13, 88, 63);
+
+}
+
+.contact-container form h2{
+    font-size: 33px;
+    color: rgb(13, 88, 63);
+    font-weight: 800;
+}
+
+.contact-container form input{
+    border-radius: 5px;
+    border-color: 1px solid;
+}
+
+.contact-container form textarea{
+    border-radius: 5px;
+}
+
+.contact-container form button{
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(27, 168, 121);
+    padding: 7px 20px;
+}
+
+.contact-container form button:hover{
+    opacity: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div-ctn{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 270px;
+    background-color: white;
+    color: rgb(56, 155, 122);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 1010;
+    gap: 8px;
+}
+
+.div-ctn button{
+    cursor: pointer;
+    padding: 3px 10px;
+    background-color: rgb(60, 143, 115);
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    transition: padding 0.3s ease, font-size 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div-ctn button:hover{
+    padding: 5px 11px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.div-ctn-close{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+}
+
+.div-ctn-close:hover{
+    font-size: 23px;
+}
